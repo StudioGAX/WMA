@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>WMA</title>
-        <meta name="viewport" content="width=device-width", initial-scale=5>
-   <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-
-        <style>
-body {
-    background-color: hotpink;
-}
-model-viewer {
-position: absolute;
-    right: 50px;
-    width: 100%;
-    height: 100%;
-    overflow: visible;
-    visibility: visible;
-    display: block
-}
-
-            .wmalink {
-position: fixed;
-  top: 10PX;
-  right: 10PX;
-  width: 80%;
-                
-            }    
-            a:link {
-                font-family: sans-serif;
-                font-weight: bold;
-                color: :white;
-                
-            }
-            
-            a:visited {
-                color: white;
-            }
-      
+<html>
+<head>
+    <title>WMA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+<style>
     
-        </style>
-</head>
-<body>
-<model-viewer id="mv-demo" shadow-intensity="1.5" src="wma.glb"
-alt="wma" auto-rotate camera-controls touch-action="pan-x" disable-zoom> <div class="wmalink"><a href="https://winwoodmckenzie.com.au/">ENTER</a></div></model-viewer>
-</body>
+  {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+   
+}  
+
+
+    </style>
+    
+    </head>
+<background>
+<img id="randomImage" src="" alt="Random Image">
+ 
+    <script>
+    var imageUrls = [
+      "mask1.svg",
+      "mask2.svg",
+        "mask3.svg",
+        "mask4.svg",
+        "mask5.svg",
+        "mask6.svg",
+        "mask7.svg",
+      // Add more image URLs as needed
+    ];
+
+    function loadRandomImage() {
+      var randomIndex = Math.floor(Math.random() * imageUrls.length);
+      var randomImageUrl = imageUrls[randomIndex];
+      var imgElement = document.getElementById("randomImage");
+      imgElement.src = randomImageUrl;
+    }
+
+    // Call the function on page load
+    window.onload = loadRandomImage;
+  </script>
+</background>   
 </html>
