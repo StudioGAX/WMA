@@ -1,31 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>WMA</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- 
-<style>
-    background {
-        width: 100%;
-    }  
-
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+    <title>Gilberto Mata</title>
+    <style>
+        
+ html, body {
+  margin: 0;
+  padding: 0;
+}  
+        
+ .background {
+     filter: grayscale(100%);
+     opacity: 1;
+     z-index: 1;
+    }
+        
+        img {
+  width: 100vw;
     
-    </head>
-<background>
+        }
+
+.logo {  
+            width: 75vw;
+            margin-left: 10%;
+            margin-right: 10%;
+            position: fixed;
+            top: 10%;
+            z-index: 2;
+        }
+        
+        a {
+  color: #fff;
+}
+label {
+    font-family: sans-serif;
+  cursor: pointer;
+}
+#content {
+  background-color: #9acd32;
+}
+label, #content {
+  height: 20px;
+  width: 100vw;
+  margin-botton: 10px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+#menu-toggle {
+  display: none;
+}
+#menu {
+  background-color: #ffa500;
+  width: 100vw;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease;
+}
+#menu-toggle:checked + #menu {
+  max-height: 100px;
+}
+    </style>
+</head>
+    
+<body>
+    <div class="background">
 <img id="randomImage" src="" alt="Random Image">
- 
-    <script>
-    var imageUrls = [
-      "mask1.svg",
-      "mask2.svg",
-        "mask3.svg",
-        "mask4.svg",
-        "mask5.svg",
-        "mask6.svg",
-        "mask7.svg",
-      // Add more image URLs as needed
+</div>
+
+<div class="logo">
+    <object type="image/svg+xml" data="./splash/logo.svg"></object>
+    </div>
+    
+<label for="menu-toggle"></label>
+<input type="checkbox" id="menu-toggle"/>
+<ul id="menu">
+  <li><a href="#">Item 1</a></li>
+  <li><a href="#">Item 2</a></li>
+  <li><a href="#">Item 3</a></li>
+</ul>
+  
+    
+</body>
+    
+<script>
+var imageUrls = [
+    "./splash/8.svg",
+   
     ];
 
     function loadRandomImage() {
@@ -37,6 +102,6 @@
 
     // Call the function on page load
     window.onload = loadRandomImage;
-  </script>
-</background>   
+</script>
+
 </html>
