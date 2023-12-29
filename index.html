@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+Symbols+2&display=swap" rel="stylesheet"> 
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap" rel="stylesheet">
+    
     <title>Gilberto Mata</title>
     <style>
         
  html, body {
-  margin: 0;
-  padding: 0;
+     background-color: black;
+    margin: 0;
+    padding: 0;
 }  
         
  .background {
-     filter: grayscale(100%);
+     position:relative;
+     top: -25vw;
      opacity: 1;
      z-index: 1;
     }
@@ -45,7 +59,7 @@ label {
 label, #content {
   height: 20px;
   width: 100vw;
-  margin-botton: 10px;
+  margin-bottom: 10px;
   border: 1px solid #fff;
   display: inline-block;
 }
@@ -64,10 +78,27 @@ label, #content {
 #menu-toggle:checked + #menu {
   max-height: 100px;
 }
+        
+h1 {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 70%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline dotted ;
+    color: white;
+    cursor: pointer;  
+            
+        }        
+        
     </style>
 </head>
     
 <body>
+
+    <h1>Gilberto Mata</h1>
+    
     <div class="background">
 <img id="randomImage" src="" alt="Random Image">
 </div>
@@ -89,7 +120,9 @@ label, #content {
     
 <script>
 var imageUrls = [
+    "./splash/BG1.png",
     "./splash/8.svg",
+    
    
     ];
 
