@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">    
+    
+    <title>Gilberto Mata</title>
+    <style>
+        
+ html, body {
+    margin: 0;
+    padding: 0;
+}  
+        
+        a:visited {
+            color: black;
+        }            
+          
+h1 {
+    height: 10%;
+    font-size: 3.5vw;
+    text-align: right;
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    color: black;
+    padding-top: 2.5%;
+    padding-right: 2.5%;
+            
+}        
+
+h1 a {
+    text-decoration: none     
+        }        
+        
+
+.intro {
+    width: 95%;
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.3vw;
+    text-align: justify;
+    }
+
+table {
+            vertical-align: text-top;
+            table-layout:auto;
+            color: black;
+            width: 95%;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+        }
+    
+        th {
+            color: black;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+            position: sticky;
+            top: 4vw;
+            font-size: 3vw;
+            text-align: left;
+            font-family: 'Jura', sans-serif;
+            font-weight: 600;
+            cursor: pointer;    
+            }
+        
+        td {
+            font-family: 'Raleway', sans-serif;
+            font-size: 2.3vw;
+            text-align: left;
+            cursor: cell;
+            padding-right: 2.5%;
+            padding-left: 2.5%;
+            padding-bottom: 1vw;
+            
+        }        
+        
+        
+ul {
+    background: white;
+    z-index: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    font-family: 'Jura', sans-serif;
+    font-size: 3vw;
+    display: block;
+    color: black;
+    padding: 2.5vw 2.5vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: aqua;
+}
+               
+    </style>
+</head>
+    
+<body>
+
+    <h1><a href="index.html">G.Mata</a></h1>
+
+<div class="intro">
+<p>
+
+La escultura de G.Mata se centra en lluvia, montañas y acuíferos. Está basada en el fenómeno natural que forma parte del ciclo del agua.  
+El agua de lluvia cae en suelos basálticos, permeables y se filtra al subsuelo para formar los cuerpos de agua subterránea, mismos que son depósitos de diferentes dimensiones y corrientes.
+<br>
+<br> 
+Realizadas en recinto, que es la piedra volcánica por excelencia; aplicaciones de obsidiana o esmalte de joyería y fierro o cables de acero.
+<br>
+<br> 
+Hace énfasis en las grietas, conducto natural esencial por donde se penetra el agua de lluvia al subsuelo. 
+<br>
+<br> 
+Se interpretan montañas o formas similares, en ocasiones con terrazas, donde se capta de manera más eficiente los escurrimientos. 
+<br>
+<br> 
+Piedras de recinto, sostenidas en base a una presión lateral presentándose con gran altura para lograr apreciar la filtración de agua.
+</p>    
+</div>
+
+    <br>
+    
+ <table id="obra">
+        
+        <tr>
+        <th onclick="sortTable(0)">Nombre</th>
+        <th onclick="sortTable(1)">Serie</th>
+        <th onclick="sortTable(2)">Material</th>    
+        <th onclick="sortTable(3)">Ano</th>
+        </tr>
+        
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+        <tr>
+        <td>Montana 1</td>
+        <td>Montanas</td>
+        <td>Recinto</td>
+        <td>2022</td>
+        </tr> 
+    <tr>
+        <td>Arbol 1</td>
+        <td>Arboles</td>
+        <td>Acero</td>
+        <td>2001</td>
+        </tr> 
+     
+     <tr>
+        <td>Twin Peaks: Fire Walk With Me</td>
+        <td>Angelo Badalamenti</td>
+        <td>1993</td>
+        <td>Soundtrack</td>
+        </tr> 
+     
+     
+     
+        </table>  
+     
+<ul>
+  <li><a href="#home">Obra</a></li>
+  <li><a href="#news">Contacto</a></li>
+  <li><a href="#contact">Bio</a></li>
+</ul>
+    
+    
+</body>
+    
+
+<script>
+function sortTable(n) {
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+  table = document.getElementById("obra");
+  switching = true;
+  //Set the sorting direction to ascending:
+  dir = "asc"; 
+  /*Make a loop that will continue until
+  no switching has been done:*/
+  while (switching) {
+    //start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /*Loop through all table rows (except the
+    first, which contains table headers):*/
+    for (i = 1; i < (rows.length - 1); i++) {
+      //start by saying there should be no switching:
+      shouldSwitch = false;
+      /*Get the two elements you want to compare,
+      one from current row and one from the next:*/
+      x = rows[i].getElementsByTagName("TD")[n];
+      y = rows[i + 1].getElementsByTagName("TD")[n];
+      /*check if the two rows should switch place,
+      based on the direction, asc or desc:*/
+      if (dir == "asc") {
+        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch= true;
+          break;
+        }
+      } else if (dir == "desc") {
+        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+          //if so, mark as a switch and break the loop:
+          shouldSwitch = true;
+          break;
+        }
+      }
+    }
+    if (shouldSwitch) {
+      /*If a switch has been marked, make the switch
+      and mark that a switch has been done:*/
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+      //Each time a switch is done, increase this count by 1:
+      switchcount ++;      
+    } else {
+      /*If no switching has been done AND the direction is "asc",
+      set the direction to "desc" and run the while loop again.*/
+      if (switchcount == 0 && dir == "asc") {
+        dir = "desc";
+        switching = true;
+      }
+    }
+  }
+}
+</script>
+
+</html>
