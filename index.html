@@ -6,124 +6,106 @@
    
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+Symbols+2&display=swap" rel="stylesheet"> 
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Rubik&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <title>Gilberto Mata</title>
     <style>
         
  html, body {
-     background-color: black;
     margin: 0;
     padding: 0;
 }  
         
- .background {
-     position:relative;
-     top: -25vw;
-     opacity: 1;
-     z-index: 1;
-    }
-        
-        img {
-  width: 100vw;
-    
-        }
-
-.logo {  
-            width: 75vw;
-            margin-left: 10%;
-            margin-right: 10%;
-            position: fixed;
-            top: 10%;
-            z-index: 2;
-        }
-        
-        a {
-  color: #fff;
-}
-label {
-    font-family: sans-serif;
-  cursor: pointer;
-}
-#content {
-  background-color: #9acd32;
-}
-label, #content {
-  height: 20px;
-  width: 100vw;
-  margin-bottom: 10px;
-  border: 1px solid #fff;
-  display: inline-block;
-}
-#menu-toggle {
-  display: none;
-}
-#menu {
-  background-color: #ffa500;
-  width: 100vw;
-  overflow: hidden;
-  max-height: 0;
-  padding: 0;
-  margin: 0 auto;
-  -webkit-transition: all 0.3s ease;
-}
-#menu-toggle:checked + #menu {
-  max-height: 100px;
-}
-        
-h1 {
-    padding-left: 15%;
-    padding-right: 15%;
-    width: 70%;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: underline dotted ;
-    color: white;
-    cursor: pointer;  
-            
+        a:visited {
+            color: black;
         }        
         
+        img {
+    height: 90vh;
+        max-width: 95vw;
+    object-fit: cover;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+     position:relative;
+     top: 10%;
+     opacity: 1;
+     z-index: 1;
+    }    
+          
+h1 {
+    height: 10%;
+    font-size: 3.5vw;
+    text-align: right;
+    font-family: 'Jura', sans-serif;
+    font-weight: 600;
+    color: black;
+    padding-top: 2.5%;
+    padding-right: 2.5%;
+            
+}        
+
+        h1 a {
+            text-decoration: none     
+        }        
+        
+        
+ul {
+    
+    z-index: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+    font-family: 'Jura', sans-serif;
+    font-size: 3vw;
+    display: block;
+    color: black;
+    padding: 2.5vw 2.5vw;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: aqua;
+}
+               
     </style>
 </head>
     
 <body>
 
-    <h1>Gilberto Mata</h1>
+    <h1><a href="index.html">G.Mata</a></h1>
     
-    <div class="background">
+    <div class="obrasSplash">
 <img id="randomImage" src="" alt="Random Image">
 </div>
 
-<div class="logo">
-    <object type="image/svg+xml" data="./splash/logo.svg"></object>
-    </div>
     
-<label for="menu-toggle"></label>
-<input type="checkbox" id="menu-toggle"/>
-<ul id="menu">
-  <li><a href="#">Item 1</a></li>
-  <li><a href="#">Item 2</a></li>
-  <li><a href="#">Item 3</a></li>
+<ul>
+  <li><a href="#home">Obra</a></li>
+  <li><a href="#news">Contacto</a></li>
+  <li><a href="#contact">Bio</a></li>
 </ul>
-  
+    
     
 </body>
     
 <script>
 var imageUrls = [
-    "./splash/BG1.png",
-    "./splash/8.svg",
-    
-   
+    "./splash/1.jpg",
+    "./splash/2.jpg",
+    "./splash/4.jpg",
+    "./splash/5.jpg",
     ];
 
     function loadRandomImage() {
