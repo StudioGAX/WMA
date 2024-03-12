@@ -19,18 +19,24 @@
             color: black;
         }        
         
-    .obrasSplash {
+    .profile {
     height: 75vh;
-    max-width: 95vw;
+    max-width: 95vw;  
      position: absolute;
     overflow: hidden;
      right: 2.5%;
     left: 2.5%;
-    top: 10%;
+    top: 2.5%;    
      opacity: 1;
      z-index: 1;
-    }    
-    
+        }  
+
+        .profile img {
+            height: 100%;
+            object-fit: contain;
+            
+        }
+       
           
 h1 {
     height: 10%;
@@ -93,8 +99,8 @@ font-weight: 600;
 
     <h1><a href="index.html">G<span style="color: red">&#9642;</span>Mata</a></h1>
     
-    <div class="obrasSplash">
-<img id="randomImage" src="" alt="Random Image">
+    <div class="profile">
+<img src="images/bio/gmata.jpg" alt="G.Mata">
 </div>
 
 
@@ -109,22 +115,7 @@ font-weight: 600;
 </body>
     
 <script>
-var imageUrls = [
-    "./splash/1.jpg",
-    "./splash/2.jpg",
-    "./splash/4.jpg",
-    "./splash/5.jpg",
-    ];
 
-    function loadRandomImage() {
-      var randomIndex = Math.floor(Math.random() * imageUrls.length);
-      var randomImageUrl = imageUrls[randomIndex];
-      var imgElement = document.getElementById("randomImage");
-      imgElement.src = randomImageUrl;
-    }
-
-    // Call the function on page load
-    window.onload = loadRandomImage;
 </script>
 
 </html>
