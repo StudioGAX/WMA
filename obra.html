@@ -6,21 +6,23 @@
 
     <title>G.MATA / Escultura</title>
     <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap')
+
         
  html, body {
-    background-color:#F2F3F4; 
+     background-color:#F2F3F4; 
     margin: 0;
     padding: 0;
 }  
         
-        a:visited {
-            color: black;
-        }            
+a:visited {
+    color: black;
+        }        
           
 h1 {
     height: 10%;
     font-size: 5vw;
-   text-transform: uppercase;
+    text-transform: uppercase;
     text-align: right;
     font-family: 'Inter', sans-serif;
     font-weight: 900;
@@ -28,69 +30,24 @@ h1 {
     position: absolute;
     top: 3.5%;
     right: 3.5%;
-     z-index: 2;
-            
+    z-index: 2;         
 }        
 
 h1 a {
     text-decoration: none     
-        }        
-        
-
-.intro {
-    width: 95%;
-    padding-right: 2.5%;
-    padding-left: 2.5%;
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.3vw;
-    text-align: justify;
-    }
-        
-p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.3vw;
-    text-align: justify;
-    }        
-
-
-details > summary {
-  list-style: none;
-}
-details > summary::-webkit-details-marker {
-  display: none;
-}        
-        
-summary {
-    font-family: 'Jura', sans-serif;
-    font-size: 3vw;
-    text-transform: uppercase;
-    text-align: justify;
-    cursor: pointer;
-    padding-left: 1vw;
-        }
-    
-summary:hover:not(.active) {
-color: #F2F3F4;
-    background-color: rgb(230,80,30);
-}        
-  
-        details {
-        width: 95%;
-    padding-right: 2.5%;
-    padding-left: 2.5%;    
-            
-        }
+        }                
         
 ul {
+    
     z-index: 2;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-left: 2.5vw;
+    left: 2.5%;
     overflow: hidden;
     position: fixed;
-    bottom: 0;
-    width: 100%;
+    bottom: 1.75%;
+    width: 100%;	
 }
 
 li {
@@ -98,33 +55,51 @@ li {
 }
 
 li a {
-    text-transform: uppercase;
-    font-family: 'Jura', sans-serif;
-    font-size: 3vw;
+    text-transform: capitalize;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.5vw;
+    font-weight: 600;
     display: block;
     color: black;
-    background-color: #F2F3F4;
     padding: 1vw 1vw;
     text-align: center;
-    text-decoration: none;
-}
+    text-decoration: underline;
+	text-decoration-thickness: 1vw;
+	text-decoration-color: black;
+} 
 
-li a:hover:not(.active) {
-color: white;
-  color: rgb(230,80,30);
-        }
-        
-  h1 a:hover:not(.active) {
-color: white;
-  color: rgb(230,80,30);
-        }
-                             
-.scrolling-wrapper {
+.container {
+    height: 75vh;
+    max-width: 95vw;
+    position: absolute;
+    overflow: hidden;
+    right: 2.5%;
+    left: 2.5%;
+    top: 10%;
+    opacity: 1;
+    z-index: 1;
+            }
+
+.container hr {
+    width: 100%;
+    border: none;
+    height: 1vw;
+    color: black;
+    background-color: black;    
+             }
+
+.intro {
+    font-family: 'Inter', sans-serif;
+    font-size: 3.5vw;
+    font-weight: 900; 
+    color: black;
+            }
+
+.slides {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-        }
-    
+        } 
 .card {
     display: inline-block;
     font-family: 'Raleway', sans-serif;
@@ -133,76 +108,20 @@ color: white;
     text-align: justify;
     color: rgb(230,80,30);
     }     
-          
-  
-    .summarytext {
-    font-family: 'Raleway', sans-serif;
-    font-size: 2.3vw;
-    text-align: justify;
-    color: rgb(230,80,30);
-    }     
-            
-        }        
+              
         
     </style>
 </head>
     
 <body>
-
-    <h1><a href="index.html">G.Mata</a></h1>
-
-<div class="intro">
-<p>
-
-La escultura de G.Mata se centra en lluvia, montañas y acuíferos. Está basada en el fenómeno natural que forma parte del ciclo del agua.  
+<h1><a href="index.html">G<span style="color:red">.</span>Mata</a></h1>    
+<div class=container>
+<div class=intro>    
+<p>La obra de G.Mata se centra en lluvia, montañas, y acuíferos. Está basada en el fenómeno natural que forma parte del ciclo del agua.  
 El agua de lluvia cae en suelos basálticos, permeables y se filtra al subsuelo para formar los cuerpos de agua subterránea, mismos que son depósitos de diferentes dimensiones y corrientes.
-<br>
-<br> 
-Realizadas en recinto, que es la piedra volcánica por excelencia; aplicaciones de obsidiana o esmalte de joyería y fierro o cables de acero.
-<br>
-<br> 
-Hace énfasis en las grietas, conducto natural esencial por donde se penetra el agua de lluvia al subsuelo. 
-<br>
-<br> 
-Se interpretan montañas o formas similares, en ocasiones con terrazas, donde se capta de manera más eficiente los escurrimientos. 
-<br>
-<br> 
-Piedras de recinto, sostenidas en base a una presión lateral presentándose con gran altura para lograr apreciar la filtración de agua.
-</p>    
-</div>
-
-    <br>
-    
-    <details>
-  <summary>Arboles</summary>
-<p class="summarytext"> Los árboles y los bosques han participado de
-manera activa en muchos aspectos de la vida del
-planeta y especialmente en la vida del ser
-humano. Son micro-sistemas en sí mismos,
-parte del desarrollo de los eventos climáticos y
-de los procesos del ciclo del agua, lluvia y capas
-húmedas de la super>cie de la tierra.
-A la vez están presentes en ritos, mitos,
-leyendas, viviendas y hogeras.
-
-Las super>cies de los diferentes bosques y
-selvas disminuyen año tras año con afectaciones
-negativas en el equilibrio del medio ambiente y
-por ende en la vida cotodiana del ser humano.</p>        
- 
-</details>
-
-<br>    
-    
-<details>
-  <summary>lluvia-montañas-grietas</summary>
-<p class="summarytext">Los mantos acuíferos se forman por las filtraciones del agua de lluvia y conforman los cuerpos de agua subterránea. Un gran número de los acuíferos están sobre-explotados y en muchos casos se han agotado; y muchos otros están en proceso de desaparición.
-En México no se han desarrollado programas amplios en ningún ámbito –ni el lo científico, ni social, ni político, ni artísitico- dirigidos a la captación de agua de lluviay de esta manera aumentar la recarga de los mantos acuíferos.
-<br><br>
-    Esta serie está inspirada en el fenómeno natural que ocurre cuando el agua de lluvia cae en los suelos y grietas de basalto permeables. Así mismo, se inspira en las laderas de montañas donde se captan los escurrimientos de agua que se filtran a través de grietas, terrazas y pozas haciendo posible la recarga de los mantos acuíferos.
-<br>
-    </p>       
- <div class="scrolling-wrapper">
+</p><hr>
+    </div>
+<div class=slides>
     <div class="card"><figure>
       <img src="images/grietas/MA-1.JPG" style="width:100%"><figcaption>MONTAÑA CRESTERÍA Y
 TERRAZAS / Talla rústica y pulida en recinto, esmalte de joyería</figcaption></figure>
@@ -213,71 +132,13 @@ TERRAZAS</figcaption></figure>
    </div>     
   </div>
 <br>
-  <div class="scrolling-wrapper">
-    <div class="card"><figure>
-      <img src="images/grietas/MA-1.JPG" style="width:100%"><figcaption>MONTAÑA CRESTERÍA Y
-TERRAZAS / Talla rústica y pulida en recinto, esmalte de joyería</figcaption></figure>
-   </div>
-<div class="card"><figure>
-      <img src="images/grietas/MA-2.JPG" style="width:100%"><figcaption>MONTAÑA CRESTERÍA Y
-TERRAZAS</figcaption></figure>
-   </div>     
-  </div>  
-    
-</details>    
- 
-    
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  
     
 <ul>
-  <li><a href="#home">Obra</a></li>
-  <li><a href="#news">Contacto</a></li>
-  <li><a href="#contact">Bio</a></li>
-</ul>
+  <li><a href="obra.html">Obra</a></li>
+  <li><a href="bio.html">Contacto / Bio</a></li>
 
-<br>
-<br>
-<br>
+</ul>
+    
     
 </body>
-    
-
-<script>
-    
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}    
-    
-</script>
-
-</html>
