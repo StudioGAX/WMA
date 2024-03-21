@@ -103,12 +103,20 @@ font-size: 2.5vw;
 text-align: justify;
 font-family: 'Inter', sans-serif;
 font-weight: 900;
-color: white;
-background-color: black;
-display: inline-block;
 tex-overflow: clip;
 overflow: scroll;
-}      
+} 
+
+}
+
+.highlight {
+  display: inline;
+  padding: .25vw;
+  background: black;
+  color: white;
+  box-shadow: .5em 0 0 #FFC107, -.5em 0 0 #FFC107;
+}
+         
     
     </style>
 </head>
@@ -119,7 +127,8 @@ overflow: scroll;
     
     <div class="profile">
 <img src="images/bio/gmata.jpg" alt="G.Mata">
-        <div class="centered">GILBERTO MATA ESCULTOR<br><br><br>
+        <div class="centered">
+<span class="highlight">GILBERTO MATA ESCULTOR<br><br><br>
 
 Arquitectura, Universidad de Guanajuato y ITESO Guadalajara Jalisco 
 (1967-1969)
@@ -152,6 +161,7 @@ Exposiciones
 
 
 Colecciones privadas y públicas
+</span>
 </div>
 </div>
 
